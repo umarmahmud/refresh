@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="col-sm-10 col-md-7 col-lg-5">
+    {{ $paginator := .Paginate (where .Data.Pages "Section" "posts") }} {{ range $paginator.Pages }}
+    <ul class="list-unstyled">
+        <li>
+            <a href="{{ .Permalink }}" class="text-danger"> {{ .Title }}</a>
+            {{ partial "post-data.html" . }}
+        </li>
+    </ul>
+    {{ end }}
+    <!--template-->
+    {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}
