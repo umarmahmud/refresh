@@ -1,0 +1,11 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+
+[params]
+    AuthorName = "Your Name"
+    github = "https://www.github.com/"
+    twitter = "https://www.twitter.com/"
+
+
+
