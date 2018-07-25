@@ -21,7 +21,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="{{ .Site.BaseURL }}">Home
                         <span class="sr-only">(current)</span>
                     </a>
@@ -35,17 +35,17 @@
             </ul>
             <span class="navbar-text">
                 {{ with .Site.Params.twitter }}
-                    <a href="{{ . }}" class="mr-2"><img src="{{ "images/social/twitter.png" | relURL }}" height="32" width="32"></a>
+                    <a href="{{ . }}" class="mr-2"><img src="{{ "images/social/twitter.svg" | relURL }}" height="40" width="40"></a>
                 {{ end }}
                 {{ with .Site.Params.github }}
-                    <a href="{{ . }}"><img src="{{ "images/social/github.png" | relURL }}" height="32" width="32"></a>
+                    <a href="{{ . }}"><img src="{{ "images/social/github.svg" | relURL }}" height="40" width="40"></a>
                 {{ end }}
             </span>
         </div>
     </nav>
 
     <!--content-->
-    <div class="container-fluid mt-4">
+    <div class="container-fluid mt-5">
         <div class="row">
             <div class="col">
             </div>
@@ -71,10 +71,8 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
 </body>
 

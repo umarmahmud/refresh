@@ -3,8 +3,9 @@
     {{ $paginator := .Paginate (where .Data.Pages "Section" "posts") }} {{ range $paginator.Pages }}
     <ul class="list-unstyled">
         <li>
-            <a href="{{ .Permalink }}" class="text-danger"> {{ .Title }}</a>
+            <h4><a href="{{ .Permalink }}" class="text-danger"> {{ .Title }}</a></h4>
             {{ partial "post-data.html" . }}
+            <hr>
         </li>
     </ul>
     {{ end }}
