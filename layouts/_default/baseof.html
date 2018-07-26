@@ -30,7 +30,7 @@
                     <a class="nav-link" href="{{ "projects/" | relLangURL }}">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ "about/" | relLangURL }}">About</a>
+                    <a class="nav-link" href="{{ "about/" | relLangURL }}{{ .Site.Params.AuthorName | urlize }}">About</a>
                 </li>
             </ul>
             <span class="navbar-text">

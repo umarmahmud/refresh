@@ -1,23 +1,21 @@
 {{ define "main" }}
-<div class="col-sm-10 col-md-8">
-    <div class="card-deck">
-        {{ range $key, $value := .Site.Data.projects }}
-        {{ range $value }}
-        <div class="card border-danger">
-            <img class="card-img-top" src="{{ "projects/" | relURL }}{{ .image | urlize }}" alt="Card image cap">
-            <div class="card-body">
-                <h5><a href="{{ .link }}" class="text-danger">{{ .name }}</a></h5>
-                <p class="card-text">{{ .desc }}</p>
-                <hr>
-                <h6 class="font-italic">Built With: </h6>
-                {{ range .technologies }}
+<div class="col-sm-8 col-md-6">
+    {{ range $key, $value := .Site.Data.projects }}
+    {{ range $value }}
+    <div class="card border-danger text-center mb-5">
+        <div class="card-body">
+            <h4 class="card-title"><a href="{{ .link }}" class="text-danger">{{ .name }}</a></h4>
+            <p class="card-text">{{ .desc }}</p>
+            <hr>
+            <h6 class="font-italic">Built With: </h6>
+            {{ range .technologies }}
                 <span class="badge badge-danger">{{ . }}</span>
-                {{ end }}
-            </div>
+            {{ end }}
         </div>
-        {{ end }}
-        {{ end }}
     </div>
+    {{ end }}
+    {{ end }}
 </div>
 {{ end }}
+
 

@@ -1,9 +1,40 @@
-"Refresh" theme for Hugo - An elegant, minimalist theme built for bloggers. Built with Bootstrap 4.
+### Intro
 
-To create a new post, type `hugo new posts/new-post.md`.
+- This is the "Refresh" theme for Hugo. It is an elegant, minimalist theme built for bloggers. Built with Bootstrap 4.
 
-To create a new "about" page, type `hugo new about.md`. Then add `layout: layouts/_default/single.html` to your YAML front matter in your markdown.
+- Author's name (AuthorName), Github username, and Twitter username can be modified in the `config.toml` file.
 
-To create a new "projects" page, type `hugo new projects.md`. Then add `layout: layouts/_default/single.html` to your YAML front matter in your markdown.
+### CLI Commands
 
-Author's name, Github username, and Twitter username can be modified in config.toml file.
+- To create a new post, type `hugo new posts/new-post.md`.
+
+- To create a new "about" page, type `hugo new about/your-name.md`, where `your-name` is the field specified in the "AuthorName" parameter of your `config.toml` file.
+
+- To create a new "projects" page, type `hugo new projects/projects.md`.
+
+### 'Projects' Page
+
+- The data in the "projects" page is populated by a JSON file, which is stored in the `data` folder. Here is a sample data structure for the JSON file:
+
+```
+{
+   "projects": 
+   [
+        {
+        "name": "Project1",
+        "link": "http://www.example.com",
+        "desc": "A wonderful project",
+        "technologies": ["java", "spring-boot"]
+        },
+
+        {
+        "name": "Project2",
+        "link": "http://www.example.com",
+        "desc": "A really cool project",
+        "technologies": ["python", "opencv"]
+        }
+    ]
+}
+```
+
+
