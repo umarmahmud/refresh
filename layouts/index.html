@@ -23,20 +23,7 @@
             {{ end }}
         </div>
         <div class="col-sm-12 col-md-2">
-            <div class="card border-danger text-center mt-4" style="width: 14rem;">
-                <div class="card-body">
-                    <h5 class="card-title text-danger mb-3">Categories</h5>
-                    <hr>
-                    <ul class="list-unstyled">
-                        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                        <li class="mt-1">
-                            <a href="{{ "categories/" | relURL }}{{ $name | urlize }}" class="text-danger"> {{ $name }}
-                            </a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                </div>
-            </div>
+            {{ partial "category-card.html" . }}
         </div>
     </div>
 </div>
