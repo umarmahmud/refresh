@@ -8,7 +8,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
-
 </head>
 
 <body>
@@ -45,15 +44,11 @@
     </nav>
 
     <!--content-->
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col">
-            </div>
-
+    <div class="container mt-5">
+        <div class="row justify-content-around">
+            
             {{ block "main" . }} {{ end }}
 
-            <div class="col">
-            </div>
         </div>
     </div>
 
@@ -77,3 +72,4 @@
 </body>
 
 </html>
+

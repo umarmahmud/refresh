@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="col-sm-10 col-md-7 col-lg-5">
+<div class="col-sm-10 col-md-7">
     <h3 class="mb-3">{{ .Title }}</h3>
     <hr>
     {{ $paginator := .Paginate (where .Pages "Section" "posts") }} {{ range $paginator.Pages }}
