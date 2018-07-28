@@ -8,6 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
+
+    <!-- Google Analytics Async-->
+    {{ template "_internal/google_analytics_async.html" . }}
 </head>
 
 <body>
@@ -44,13 +47,8 @@
     </nav>
 
     <!--content-->
-    <div class="container mt-5">
-        <div class="row justify-content-around">
             
-            {{ block "main" . }} {{ end }}
-
-        </div>
-    </div>
+    {{ block "main" . }} {{ end }}
 
     <!--footer-->
     <div class="footer">

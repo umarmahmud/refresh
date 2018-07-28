@@ -1,8 +1,12 @@
 ### Intro
 
-- This is the "Refresh" theme for Hugo. It is an elegant, minimalist theme built for bloggers. Built with Bootstrap 4.
+- "Refresh" is a Hugo theme for blogging.
 
 - Author's name (AuthorName), Github username, and Twitter username can be modified in the `config.toml` file.
+
+- To enable Disqus, add `disqusShortname = "yourdiscussshortname"` with your shortname in the `config.toml` file.
+
+- For Google Analytics, add `googleAnalytics = "UA-XX-XX"` with your tracking ID in the `config.toml` file.
 
 ### Creating New Content
 
@@ -34,5 +38,4 @@
     ]
 }
 ```
-
 

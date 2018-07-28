@@ -1,4 +1,4 @@
-<div class="card border-danger mt-4" style="width: 14rem;">
+<div class="card border-danger mt-1" style="width: 14rem;">
     <div class="list-group">
         {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
             <a href="{{ "categories/" | relURL }}{{ $name | urlize }}" class="list-group-item list-group-item-action"> {{ $name }} </a>
