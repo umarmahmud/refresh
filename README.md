@@ -1,39 +1,57 @@
-### Intro
-
 - "Refresh" is a Hugo theme for blogging.
 
-- Author's name (AuthorName), Github username, and Twitter username can be modified in the `config.toml` file.
+### Configuration
 
-- To enable Disqus, add `disqusShortname = "yourdiscussshortname"` with your shortname in the `config.toml` file.
+- Add the following to your `config.toml` file as it contains fields that are used in the theme's templates:
 
-- For Google Analytics, add `googleAnalytics = "UA-XX-XX"` with your tracking ID in the `config.toml` file.
+```
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+
+[params]
+    AuthorName = "Your Name"
+    github = "https://www.github.com/"
+    twitter = "https://www.twitter.com/"
+
+[taxonomies]
+    category = "categories"
+```
+
+- To enable Disqus, add `disqusShortname = "yourdiscussshortname"` in the `config.toml` file.
+
+- For Google Analytics, add `googleAnalytics = "UA-XX-XX"` in the `config.toml` file.
 
 ### Creating New Content
 
-- To create a new post, type `hugo new posts/new-post.md`.
+- Create a new post with `hugo new posts/new-post.md`.
 
-- To create a new "about" page, type `hugo new about/_index.md`. "About" content will go inside `content/about/_index.md`
+- Create a new "about" page with `hugo new about/_index.md`. "About" content will go inside `content/about/_index.md`
 
-- To create a new "projects" page, type `hugo new projects/_index.md`. The data in the "projects" page is populated by a `projects.json` file, which is stored in the `data` folder. The file __must__ be named `projects.json` to work.
+- Create a new "projects" page with `hugo new projects/_index.md`. The data in the "projects" page is populated by a `projects.json` file, which is stored in the `data` folder. The file __must__ be named `projects.json` and adhere to the structure below to work.
 
-- Here is the template for the `projects.json` file:
+- Here is the structure for the `projects.json` file:
 
 ```
 {
-   "projects": 
-   [
+    "projects": [
         {
-        "name": "Project1",
-        "link": "http://www.example.com",
-        "desc": "A wonderful project",
-        "technologies": ["java", "spring-boot"]
+            "name": "Project1",
+            "link": "https://www.example.com",
+            "desc": "Project1 description",
+            "technologies": [
+                "java",
+                "spring-boot"
+            ]
         },
-
         {
-        "name": "Project2",
-        "link": "http://www.example.com",
-        "desc": "A really cool project",
-        "technologies": ["python", "opencv"]
+            "name": "Project2",
+            "link": "https://www.example.com",
+            "desc": "Project2 description",
+            "technologies": [
+                "python",
+                "opencv"
+            ]
         }
     ]
 }
