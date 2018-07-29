@@ -1,9 +1,14 @@
-<div class="post-data">
+<div class="mt-4">
     <p>
-        <span class="font-italic">{{ .Date.Format "Jan 02, 2006"}}</span> {{ if .Params.categories }} {{ range .Params.categories }}
+        <span class="font-italic"> {{ .Date.Format "Jan 02, 2006"}} </span> 
+        {{ if .Params.categories }} 
+        {{ range .Params.categories }}
         <span class="float-right">
             <a href="{{ "categories/" | relURL }}{{ . | urlize }}" class="badge badge-danger ml-1">{{ . }}</a>
         </span>
-        {{ end }} {{ end }}
+        {{ end }} 
+        {{ end }}
     </p>
 </div>
+
+
