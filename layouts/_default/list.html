@@ -2,7 +2,11 @@
 <div class="container mt-5 mb-5">
     <div class="row justify-content-center">
         <div class="col-sm-10 col-md-8">
+            {{ if eq .Section "categories" }}
+            <h3 class="mb-3"><span class="text-danger"> Category: </span>{{ .Title }}</h3>
+            {{ else }}
             <h3 class="mb-3">{{ .Title }}</h3>
+            {{ end }}
             <hr> 
             {{ $paginator := .Paginate (where .Pages "Section" "posts") }} 
             {{ range $paginator.Pages }}

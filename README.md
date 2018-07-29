@@ -2,13 +2,15 @@
 
 ### Configuration
 
-- Add the following to your `config.toml` file as it contains fields that are used in the theme's templates:
+- Add the following to your `config.toml` file:
 
 ```
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "refresh"
+pygmentsCodefences = true
+pygmentsStyle = "manni"
 
 [params]
     AuthorName = "Your Name"
