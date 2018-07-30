@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="container mt-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-3 mb-md-5">
     <div class="row justify-content-center">
         <div class="col-sm-10 col-md-7">
             <h3 class="mt-3 mb-3">{{ .Title }}</h3>
@@ -13,8 +13,8 @@
                     </h4>
                     <p class="card-text">{{ .desc }}</p>
                     <hr>
-                    <h6 class="font-italic"> 
-                        <span class="mr-2"> Built With: </span>
+                    <h6> 
+                        <span class="font-italic mr-2"> Built With: </span>
                         {{ range .technologies }}
                         <span class="badge badge-danger">{{ . }}</span>
                         {{ end }}

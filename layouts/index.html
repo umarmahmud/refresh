@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="container mt-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-3 mb-md-5">
     <div class="row justify-content-around">
         <div class="col-sm-10 col-md-7 mb-5">
             {{ $paginator := .Paginate (where .Pages "Section" "posts") }} 
@@ -23,7 +23,7 @@
             </span>
             {{ end }}
         </div>
-        <div class="col-sm-10 col-md-3">
+        <div class="col-md-3 d-none d-md-block">
             {{ partial "category-card.html" . }}
         </div>
     </div>
