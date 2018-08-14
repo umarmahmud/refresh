@@ -1,73 +1,32 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ "style.css" | relURL }}">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
+        <!-- Google Analytics Async-->
+        {{ template "_internal/google_analytics_async.html" . }}
+    </head>
 
-    <!-- Google Analytics Async-->
-    {{ template "_internal/google_analytics_async.html" . }}
-</head>
-
-<body>
-    <!--header-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-        <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ .Site.BaseURL }}">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ "projects/" | relURL }}">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ "about/" | relURL }}">About</a>
-                </li>
-            </ul>
-            <span class="navbar-text">
-                {{ with .Site.Params.twitter }}
-                    <a href="{{ . }}" class="mr-2"><img src="{{ "images/social/twitter.svg" | relURL }}" height="40" width="40"></a>
-                {{ end }}
-                {{ with .Site.Params.github }}
-                    <a href="{{ . }}"><img src="{{ "images/social/github.svg" | relURL }}" height="40" width="40"></a>
-                {{ end }}
-            </span>
-        </div>
-    </nav>
-
-    <!--content-->
-            
-    {{ block "main" . }} {{ end }}
-
-    <!--footer-->
-    <footer>
-        <hr>
-        <div class="container-fluid mb-3">
-            <div class="row">
-                <div class="col-12 text-center">
-                    Copyright &copy; {{ now.Format "2006"}} {{ .Site.Params.AuthorName }}
-                </div>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 id="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+                <h5 id="subtitle">{{ .Site.Params.description }}</h5>
+                <hr>
+                <p><a href="{{ "about/" | relURL }}">About</a> {{ with .Site.Params.twitter }} <a href="{{ . }}">Twitter</a> {{ end }} {{ with .Site.Params.github }} <a href="{{ . }}">Github</a> {{ end }} </p>
+                <hr>
             </div>
-        </div>
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
-</body>
+            <div class="content">
+                {{ block "main" . }} {{ end }}
+            </div>
+            <div class="footer">
+                <hr>
+                Copyright &copy; {{ now.Format "2006"}} {{ .Site.Params.AuthorName }}  
+            </div> 
+        </div>    
+    </body>
 
 </html>
-

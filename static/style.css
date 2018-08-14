@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 35%;
+}
+
+.content {
+    width: 35%;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+}
+
+.dates {
+    font-size: 80%;
+    font-style: italic;
+}
+
+#title {
+    margin-bottom: 3px;
+}
+
+#subtitle {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
