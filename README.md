@@ -17,7 +17,9 @@ paginate = 8
     AuthorName = "Your Name"
     description = "My Site Description"
     github = "https://www.github.com/"
+    githubUsername = "username"
     twitter = "https://www.twitter.com/"
+    twitterUsername = "@username"
 
 [taxonomies]
     category = "categories"

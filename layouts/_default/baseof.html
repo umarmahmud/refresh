@@ -9,6 +9,9 @@
         <!--Google Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Questrial|Quicksand" rel="stylesheet">
 
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
         <!-- Google Analytics Async-->
         {{ template "_internal/google_analytics_async.html" . }}
     </head>
@@ -19,12 +22,18 @@
             <p id="subtitle">{{ .Site.Params.description }}</p>
             <hr>
             <div class="links">
-                <a href="{{ "about/" | relURL }}">About</a> 
-                {{ with .Site.Params.twitter }} 
-                    <a href="{{ . }}">Twitter</a> 
+                <i class="fas fa-user">
+                    <a href="{{ "about/" | relURL }}">About</a>
+                </i>
+                {{ if .Site.Params.twitter }} 
+                    <i class="fab fa-twitter">
+                        <a href="{{ .Site.Params.twitter }}">{{ .Site.Params.twitterUsername }}</a>
+                    </i>
                 {{ end }} 
-                {{ with .Site.Params.github }} 
-                    <a href="{{ . }}">Github</a> 
+                {{ if .Site.Params.github }}
+                    <i class="fab fa-github">
+                        <a href="{{ .Site.Params.github }}">{{ .Site.Params.githubUsername }}</a>
+                    </i>
                 {{ end }} 
             </div>
             <hr>
