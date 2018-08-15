@@ -1,4 +1,6 @@
 {{ define "main" }}
-    <h3>{{ .Title }}</h3>
-    <hr> {{ .Content }}
+    <p class="post-title">{{ .Title }}</p>
+    <div class="post-content">
+        {{ .Content }}
+    </div>
 {{ end }}

@@ -1,37 +1,40 @@
 {{ define "main" }}
-    <h3 id="post-title">{{ .Title }}</h3>
+    <p id="post-title">{{ .Title }}</p>
     <div class="post-data">
         {{ if eq .Section "posts" }}
-            <hr> 
-            <p>
-                <span class="dates">  
-                    {{ .Date.Format "Jan 02, 2006"}}
-                </span> 
-                {{ if .Params.categories }} 
-                    {{ range .Params.categories }}
-                        <span>
-                            <a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-                        </span>
-                    {{ end }} 
-                {{ end }}
-            </p>
+            <div class="dates">  
+                {{ .Date.Format "Jan 02, 2006"}}
+            </div> 
         {{ end }}
-        <hr> 
     </div>
     <div class="post-content">
         {{ .Content }}
-        <hr> 
     </div>
-    <div class="buttons">
+    <div class="categories">
+        <strong>Categories:  </strong>
+        {{ if .Params.categories }} 
+            {{ range .Params.categories }}
+                <span class="category-links">
+                    <a href="{{ "categories/" | relURL }}{{ . | urlize }}" class="category-button">{{ . }}</a>
+                </span>
+            {{ end }} 
+        {{ end }}
+        <hr>
+    </div>
+    <div class="paginator">
         {{ with .NextInSection }}
-            <a href="{{ .Permalink }}">&#60; Previous</a>
+            <span class="previous">
+                <a href="{{ .Permalink }}" class="button">Previous</a>
+            </span>
         {{ end }} 
         {{ with .PrevInSection }}
-            <span>
-                <a href="{{ .Permalink }}">Next &#62;</a>
+            <span class="next">
+                <a href="{{ .Permalink }}" class="button">Next</a>
             </span>
         {{ end }}
     </div>
     <!--disqus-->
-    {{ template "_internal/disqus.html" . }}
+    <div class="disqus">
+        {{ template "_internal/disqus.html" . }}
+    </div>
 {{ end }}

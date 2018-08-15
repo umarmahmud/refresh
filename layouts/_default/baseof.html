@@ -6,13 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{ "style.css" | relURL }}">
 
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Caveat|Questrial" rel="stylesheet"> 
+
         <!-- Google Analytics Async-->
         {{ template "_internal/google_analytics_async.html" . }}
     </head>
 
     <body>
         <div class="header">
-            <h1 id="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+            <div id="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
             <h5 id="subtitle">{{ .Site.Params.description }}</h5>
             <hr>
             <div class="links">

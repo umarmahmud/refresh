@@ -1,6 +1,6 @@
 {{ define "main" }}
     {{ if eq .Section "categories" }}
-        <h3><span> Category: </span>{{ .Title }}</h3>
+        <h3><span id="category-title"> Category: </span>{{ .Title }}</h3>
     {{ end }}
     <hr>
     <div class="article-list">
@@ -8,9 +8,9 @@
         {{ range $paginator.Pages }}
             <ul>
                 <li>
-                    <h3>
+                    <p>
                         <a href="{{ .Permalink }}"> {{ .Title }}</a>
-                    </h3>
+                    </p>
                     <div class="dates">
                         {{ .Date.Format "Jan 02, 2006" }}
                     </div>
@@ -18,13 +18,15 @@
             </ul>
         {{ end }}
     </div>
-    <div class="buttons">
+    <div class="paginator">
         {{ if $paginator.HasPrev }}
-            <a href="{{ $paginator.Prev.URL }}">&#60; Previous</a>
+            <span class="previous">
+                <a href="{{ $paginator.Prev.URL }}" class="button">Previous</a>
+            </span>
         {{ end }} 
         {{ if $paginator.HasNext }}
-            <span>
-                <a href="{{ $paginator.Next.URL }}">Next &#62;</a>
+            <span class="next">
+                <a href="{{ $paginator.Next.URL }}" class="button">Next</a>
             </span>
         {{ end }}
     </div>
