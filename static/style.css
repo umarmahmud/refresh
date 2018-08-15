@@ -8,8 +8,6 @@ body {
 
 ul {
     list-style-type: none;
-    margin-top: 5%;
-    margin-bottom: 10%;
     padding: 0;
 }
 
@@ -40,8 +38,8 @@ hr {
     text-align: center;
     margin-top: 6%;
     margin-bottom: 2%;
-    font-family: 'Caveat', cursive;
-    font-size: 300%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 250%;
 }
 
 #subtitle {
@@ -58,8 +56,8 @@ hr {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0;
-    font-family: 'Caveat', cursive;
-    font-size: 150%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 115%;
 }
 
 .content {
@@ -70,19 +68,19 @@ hr {
 .footer {
     width: 100%;
     text-align: center;
-    font-family: 'Caveat', cursive;
-    font-size: 110%;
+    font-family: 'Questrial', sans-serif;
+    font-size: 90%;
     margin-top: 1%;
 }
 
 .article-list {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
-.article-list > ul > li {
-    margin-top: 7%;
-    margin-bottom: 5%;
+.article-list > ul {
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .article-list > ul > li > p {
@@ -193,6 +191,9 @@ hr {
     .post-content {
         margin-top: 7%;
     }
+    #post-title {
+        margin-top: 4%;
+    }
 }
 
 @media only screen  and (min-width : 1225px) and (max-width : 1823px) {
@@ -206,7 +207,10 @@ hr {
         width: 100%;
     }
     .post-content {
-        margin-top: 6%;
+        margin-top: 5%;
+    }
+    #post-title {
+        margin-top: 3%;
     }
 }
 
@@ -222,6 +226,9 @@ hr {
     }
     .post-content {
         margin-top: 5%;
+    }
+    #post-title {
+        margin-top: 3%;
     }
 }
 

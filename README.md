@@ -1,4 +1,4 @@
-- "Refresh" is a Hugo theme for blogging.
+"Refresh" is a Hugo theme for blogging.
 
 ### Configuration
 
@@ -11,6 +11,7 @@ title = "My New Hugo Site"
 theme = "refresh"
 pygmentsCodefences = true
 pygmentsStyle = "manni"
+paginate = 8
 
 [params]
     AuthorName = "Your Name"
