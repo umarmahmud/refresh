@@ -1,25 +1,27 @@
 {{ define "main" }}
-    <!--list all articles for site's pages-->
-    {{ $paginator := .Paginate (where .Pages "Section" "posts") }} 
-    {{ range $paginator.Pages }}
-        <ul>
-            <li>
-                <h3>
-                    <a href="{{ .Permalink }}"> {{ .Title }}</a>
-                </h3>
-                <div class="dates">
-                    {{ .Date.Format "Jan 02, 2006" }}
-                </div>
-            </li>
-        </ul>
-    {{ end }}
-    <!--pagination buttons-->        
-    {{ if $paginator.HasPrev }}
-        <a href="{{ $paginator.Prev.URL }}">&#60; Previous</a>
-    {{ end }} 
-    {{ if $paginator.HasNext }}
-        <span>
-            <a href="{{ $paginator.Next.URL }}">Next &#62;</a>
-        </span>
-    {{ end }}
+    <div class="article-list">
+        {{ $paginator := .Paginate (where .Pages "Section" "posts") }} 
+        {{ range $paginator.Pages }}
+            <ul>
+                <li>
+                    <h3>
+                        <a href="{{ .Permalink }}"> {{ .Title }}</a>
+                    </h3>
+                    <div class="dates">
+                        {{ .Date.Format "Jan 02, 2006" }}
+                    </div>
+                </li>
+            </ul>
+        {{ end }}
+    </div>
+    <div class="buttons">        
+        {{ if $paginator.HasPrev }}
+            <a href="{{ $paginator.Prev.URL }}">&#60; Previous</a>
+        {{ end }} 
+        {{ if $paginator.HasNext }}
+            <span>
+                <a href="{{ $paginator.Next.URL }}">Next &#62;</a>
+            </span>
+        {{ end }}
+    </div>
 {{ end }}

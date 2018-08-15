@@ -1,4 +1,4 @@
-.container {
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,6 +6,16 @@
 
 .header {
     width: 35%;
+}
+
+.header > hr {
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .content {
@@ -17,17 +27,36 @@
     text-align: center;
 }
 
+.article-list {
+
+}
+
+.buttons {
+
+}
+
+.post-data {
+
+}
+
+.post-content {
+
+}
+
 .dates {
     font-size: 80%;
     font-style: italic;
 }
 
 #title {
-    margin-bottom: 3px;
+    text-align: center;
+    margin-bottom: 1%;
 }
 
 #subtitle {
+    text-align: center;
     margin-top: 0;
+    margin-bottom: 2%;
 }
 
 ul {

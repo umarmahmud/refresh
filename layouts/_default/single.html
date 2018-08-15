@@ -1,34 +1,37 @@
 {{ define "main" }}
-    <h3>{{ .Title }}</h3>
-    <!--post metadata-->
-    {{ if eq .Section "posts" }}
+    <h3 id="post-title">{{ .Title }}</h3>
+    <div class="post-data">
+        {{ if eq .Section "posts" }}
+            <hr> 
+            <p>
+                <span class="dates">  
+                    {{ .Date.Format "Jan 02, 2006"}}
+                </span> 
+                {{ if .Params.categories }} 
+                    {{ range .Params.categories }}
+                        <span>
+                            <a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+                        </span>
+                    {{ end }} 
+                {{ end }}
+            </p>
+        {{ end }}
         <hr> 
-        <p>
-            <span class="dates">  
-                {{ .Date.Format "Jan 02, 2006"}}
-            </span> 
-            {{ if .Params.categories }} 
-                {{ range .Params.categories }}
-                    <span>
-                        <a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-                    </span>
-                {{ end }} 
-            {{ end }}
-        </p>
-    {{ end }}
-    <hr> 
-    <!--post contents-->
-    {{ .Content }}
-    <hr> 
-    <!--buttons-->
-    {{ with .NextInSection }}
-        <a href="{{ .Permalink }}">&#60; Previous</a>
-    {{ end }} 
-    {{ with .PrevInSection }}
-        <span>
-            <a href="{{ .Permalink }}">Next &#62;</a>
-        </span>
-    {{ end }}
+    </div>
+    <div class="post-content">
+        {{ .Content }}
+        <hr> 
+    </div>
+    <div class="buttons">
+        {{ with .NextInSection }}
+            <a href="{{ .Permalink }}">&#60; Previous</a>
+        {{ end }} 
+        {{ with .PrevInSection }}
+            <span>
+                <a href="{{ .Permalink }}">Next &#62;</a>
+            </span>
+        {{ end }}
+    </div>
     <!--disqus-->
     {{ template "_internal/disqus.html" . }}
 {{ end }}
