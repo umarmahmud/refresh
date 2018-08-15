@@ -14,6 +14,7 @@ pygmentsStyle = "manni"
 
 [params]
     AuthorName = "Your Name"
+    description = "My Site Description"
     github = "https://www.github.com/"
     twitter = "https://www.twitter.com/"
 
@@ -30,33 +31,4 @@ pygmentsStyle = "manni"
 - Create a new post with `hugo new posts/new-post.md`.
 
 - Create a new "about" page with `hugo new about/_index.md`. "About" content will go inside `content/about/_index.md`
-
-- Create a new "projects" page with `hugo new projects/_index.md`. The data in the "projects" page is populated by a `projects.json` file, which is stored in the `data` folder. The file __must__ be named `projects.json` and adhere to the structure below to work.
-
-- Here is the structure for the `projects.json` file:
-
-```
-{
-    "projects": [
-        {
-            "name": "Project1",
-            "link": "https://www.example.com",
-            "desc": "Project1 description",
-            "technologies": [
-                "java",
-                "spring-boot"
-            ]
-        },
-        {
-            "name": "Project2",
-            "link": "https://www.example.com",
-            "desc": "Project2 description",
-            "technologies": [
-                "python",
-                "opencv"
-            ]
-        }
-    ]
-}
-```
 
