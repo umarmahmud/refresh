@@ -27,6 +27,10 @@ hr {
     border-bottom: 1px solid #fff;
 }
 
+pre {
+    overflow: scroll;
+}
+
 .header {
     width: 100%;
 }
@@ -46,7 +50,7 @@ hr {
 #subtitle {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     font-family: 'Questrial', sans-serif;
     font-size: 85%;
     font-weight: bold;
@@ -217,6 +221,9 @@ hr {
     #post-title {
         margin-top: 3%;
     }
+    #subtitle {
+        margin-bottom: 3%;
+    }
 }
 
 @media only screen  and (min-width : 1824px) {
@@ -234,6 +241,9 @@ hr {
     }
     #post-title {
         margin-top: 3%;
+    }
+    #subtitle {
+        margin-bottom: 3%;
     }
 }
 
