@@ -63,6 +63,7 @@ pre {
     margin: 1%;
     font-family: 'Quicksand', sans-serif;
     font-size: 90%;
+    width: 100%;
 }
 
 .links > i {
@@ -79,7 +80,7 @@ pre {
     text-align: center;
     font-family: 'Questrial', sans-serif;
     font-size: 90%;
-    margin-top: 1%;
+    margin-top: 3%;
 }
 
 .article-list {
@@ -98,7 +99,7 @@ pre {
 }
 
 .paginator {
-    margin-top: 2%;
+    margin: 4%;
 }
 
 .paginator > .next {
@@ -121,10 +122,10 @@ pre {
     background-color: #006650;
     border-radius: 6%;
     color: white;
-    padding: 4px;
+    padding: 10px;
     display: inline-block;
     text-align: center;
-    margin: 8px;
+    margin-top: 15%;
     cursor: pointer;
 }
 
@@ -134,20 +135,12 @@ pre {
 
 #post-title {
     margin-bottom: 1%;
-    margin-top: 6%;
+    margin-top: 7%;
     font-size: 200%;
 }
 
-.post-data {
-    margin-top: 0;
-}
-
-.post-data > .dates {
-    float: left;   
-}
-
 .post-content {
-    margin-top: 10%;
+    margin-top: 7%;
     font-size: 110%;
 }
 
@@ -156,17 +149,12 @@ pre {
     font-style: italic;
 }
 
-.categories {
-    margin-top: 6%;
-    margin-bottom: 2%;
-}
-
 .category-button {
     background-color: white;
     border-radius: 6%;
     border: 2px solid #006650;
     color: #006650;
-    padding: 4px;
+    padding: 2px;
     display: inline-block;
     text-align: center;
     margin: 0;
@@ -174,12 +162,13 @@ pre {
     font-size: 75%;
 }
 
-#category-title {
-    color: #006650;
+.category-links {
+    float: right;
+    margin-left: 1%;
 }
 
-.category-links {
-    margin-left: 1%;
+#category-title {
+    color: #006650;
 }
 
 .disqus {
@@ -198,7 +187,7 @@ pre {
         width: 100%;
     }
     .post-content {
-        margin-top: 7%;
+        margin-top: 5%;
     }
     #post-title {
         margin-top: 4%;
@@ -216,7 +205,7 @@ pre {
         width: 100%;
     }
     .post-content {
-        margin-top: 5%;
+        margin-top: 4%;
     }
     #post-title {
         margin-top: 3%;
@@ -237,7 +226,7 @@ pre {
         width: 100%;
     }
     .post-content {
-        margin-top: 5%;
+        margin-top: 3%;
     }
     #post-title {
         margin-top: 3%;
