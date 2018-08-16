@@ -4,7 +4,7 @@
         {{ .Date.Format "Jan 02, 2006" }}
     </div>
     <div class="categories">
-        <i class="fas fa-tags" style="margin-right: 4px"></i>
+        <span class="fas fa-tags" style="margin-right: 5px; margin-top: 3px; float: left;"></span>
         {{ if .Params.categories }} 
             {{ range .Params.categories }}
                 <span class="category-links">
