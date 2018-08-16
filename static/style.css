@@ -145,7 +145,7 @@ pre {
 }
 
 .dates {
-    font-size: 80%;
+    font-size: 85%;
     font-style: italic;
 }
 
@@ -163,8 +163,11 @@ pre {
 }
 
 .category-links {
-    float: right;
-    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.categories {
+    margin-top: 1%;
 }
 
 #category-title {
