@@ -2,7 +2,6 @@
     {{ if eq .Section "categories" }}
         <h3><span id="category-title"> Category: </span>{{ .Title }}</h3>
     {{ end }}
-    <hr>
     <div class="article-list">
         {{ $paginator := .Paginate (where .Pages "Section" "posts") }} 
         {{ range $paginator.Pages }}
