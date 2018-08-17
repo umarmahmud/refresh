@@ -26,6 +26,7 @@ hr {
     border: 0;
     height: 0;
     border-top: 1px solid #00b38c;
+    border-bottom: 1px solid white;
 }
 
 pre {
@@ -74,7 +75,7 @@ pre {
     justify-content: space-evenly;
     margin: 1%;
     font-family: 'Quicksand', sans-serif;
-    font-size: 120%;
+    font-size: 100%;
     width: 100%;
 }
 
