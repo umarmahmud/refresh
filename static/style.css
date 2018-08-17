@@ -79,6 +79,10 @@ pre {
     width: 100%;
 }
 
+.links > div > a > img {
+    vertical-align: middle;
+}
+
 /* elements in content (list.html) */
 
 #category-title {

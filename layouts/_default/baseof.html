@@ -20,16 +20,16 @@
             <hr>
             <div class="links">
                 <div>
-                    <a href="{{ "about/" | relURL }}"><img src="user.png" alt="" style="vertical-align:middle; height: 20px; width: 20px;">About</a>
+                    <a href="{{ "about/" | relURL }}"><img src="{{ "user.svg" | relURL }}" alt="">About</a>
                 </div>
                 {{ if .Site.Params.twitter }}
                     <div>
-                        <a href="{{ .Site.Params.twitter }}"><img src="twitter.svg" alt="" style="vertical-align:middle">{{ .Site.Params.twitterUsername }}</a>
+                        <a href="{{ .Site.Params.twitter }}"><img src="{{ "twitter.svg" | relURL }}" alt="">{{ .Site.Params.twitterUsername }}</a>
                     </div>   
                 {{ end }} 
                 {{ if .Site.Params.github }}
                     <div>
-                        <a href="{{ .Site.Params.github }}"><img src="github.svg" alt="" style="vertical-align:middle">{{ .Site.Params.githubUsername }}</a>
+                        <a href="{{ .Site.Params.github }}"><img src="{{ "github.svg" | relURL }}" alt="">{{ .Site.Params.githubUsername }}</a>
                     </div>
                 {{ end }} 
             </div>
@@ -41,7 +41,10 @@
         </div>
         <div class="footer">
             <hr>
-            Copyright &copy; {{ now.Format "2006"}} {{ .Site.Params.AuthorName }}  
+            Copyright &copy; {{ now.Format "2006"}} {{ .Site.Params.AuthorName }} 
+            <div>
+                <a href="https://github.com/umarmahmud/refresh">Template</a> designed and coded by <a href="http://www.umarmahmud.com/about/">Umar Mahmud</a>.
+            </div> 
         </div>    
     </body>
 
