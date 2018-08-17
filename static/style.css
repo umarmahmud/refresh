@@ -30,7 +30,7 @@ hr {
 }
 
 pre {
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 /* body flexbox child elements (see baseof.html) */
@@ -42,8 +42,6 @@ pre {
 .content {
     width: 95%;
     font-family: 'Questrial', sans-serif;
-    display: flex;
-    flex-direction: column;
 }
 
 .footer {
@@ -99,8 +97,8 @@ pre {
 /* elements in content (single.html) */
 
 #post-title {
-    margin-bottom: 3%;
-    font-size: 175%;
+    margin-bottom: 1%;
+    font-size: 150%;
 }
 
 .category-links {
