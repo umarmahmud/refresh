@@ -1,10 +1,9 @@
 {{ define "main" }}
     <p id="post-title">{{ .Title }}</p>
-    <div class="dates">
-        {{ .Date.Format "Jan 02, 2006" }}
-    </div>
     <div class="categories">
-        <span class="fas fa-tags" style="margin-right: 5px; margin-top: 3px; float: left;"></span>
+        <span class="dates">
+            {{ .Date.Format "Jan 02, 2006" }}
+        </span> 
         {{ if .Params.categories }} 
             {{ range .Params.categories }}
                 <span class="category-links">
