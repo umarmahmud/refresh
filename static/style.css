@@ -147,6 +147,9 @@ pre {
     #title {
         font-size: 250%;
     }
+    #subtitle {
+        margin-bottom: 3%;
+    }
     .content {
         width: 66%;
     }
@@ -168,6 +171,9 @@ pre {
     #title {
         font-size: 250%;
     }
+    #subtitle {
+        margin-bottom: 2%;
+    }
     .content {
         width: 50%;
     }
@@ -188,6 +194,9 @@ pre {
     }
     #title {
         font-size: 250%;
+    }
+    #subtitle {
+        margin-bottom: 2%;
     }
     .content {
         width: 33%;
