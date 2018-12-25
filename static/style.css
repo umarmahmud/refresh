@@ -74,7 +74,7 @@ pre {
 
 #title {
     font-family: 'Quicksand', sans-serif;
-    font-size: 250%;
+    font-size: 175%;
     margin: 0%;
 }
 
@@ -144,20 +144,20 @@ pre {
     .header {
         width: 100%;
     }
+    #title {
+        font-size: 250%;
+    }
     .content {
         width: 66%;
     }
     .footer {
         width: 100%;
     }
-    #subtitle {
-        margin-bottom: 3%;
-    }
     .article-list > ul {
         margin-bottom: 8%;
     }
     pre {
-        padding: 5px;
+        padding: 10px;
     }
 }
 
@@ -165,14 +165,14 @@ pre {
     .header {
         width: 60%;
     }
+    #title {
+        font-size: 250%;
+    }
     .content {
         width: 50%;
     }
     .footer {
         width: 100%;
-    }
-    #subtitle {
-        margin-bottom: 2%;
     }
     .article-list > ul {
         margin-bottom: 6%;
@@ -186,14 +186,14 @@ pre {
     .header {
         width: 50%;
     }
+    #title {
+        font-size: 250%;
+    }
     .content {
         width: 33%;
     }
     .footer {
         width: 100%;
-    }
-    #subtitle {
-        margin-bottom: 2%;
     }
     .article-list > ul {
         margin-bottom: 6%;
