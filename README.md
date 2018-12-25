@@ -10,7 +10,7 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "refresh"
 pygmentsCodefences = true
-pygmentsStyle = "manni"
+pygmentsStyle = "friendly"
 paginate = 8
 
 [params]

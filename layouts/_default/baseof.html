@@ -15,25 +15,20 @@
 
     <body>
         <div class="header">
-            <div id="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
-            <p id="subtitle">{{ .Site.Params.description }}</p>
-            <hr>
-            <div class="links">
-                <div>
-                    <a href="{{ "about/" | relURL }}"><img src="{{ "user.svg" | relURL }}" alt="">About</a>
-                </div>
-                {{ if .Site.Params.twitter }}
-                    <div>
-                        <a href="{{ .Site.Params.twitter }}"><img src="{{ "twitter.svg" | relURL }}" alt="">{{ .Site.Params.twitterUsername }}</a>
-                    </div>   
-                {{ end }} 
-                {{ if .Site.Params.github }}
-                    <div>
-                        <a href="{{ .Site.Params.github }}"><img src="{{ "github.svg" | relURL }}" alt="">{{ .Site.Params.githubUsername }}</a>
-                    </div>
-                {{ end }} 
+            <div class="column-0">
+                <div id="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
+                <div id="subtitle">{{ .Site.Params.description }}</div>
             </div>
-            <hr>
+            <div class="column-1">
+                {{ if .Site.Params.twitter }}
+                    <a href="{{ .Site.Params.twitter }}"><img src="{{ "twitter.svg" | relURL }}" alt=""></a>
+                {{ end }}
+            </div>
+            <div class="column-2">
+                {{ if .Site.Params.github }}
+                    <a href="{{ .Site.Params.github }}"><img src="{{ "github.svg" | relURL }}" alt=""></a>
+                {{ end }}
+            </div>
         </div>
         <div class="content">
             {{ block "main" . }} 
@@ -43,7 +38,7 @@
             <hr>
             Copyright &copy; {{ now.Format "2006"}} {{ .Site.Params.AuthorName }} 
             <div>
-                Powered by <a href="https://gohugo.io">Hugo</a> | <a href="https://github.com/umarmahmud/refresh">'Refresh'</a> theme designed and coded by <a href="http://www.umarmahmud.com/about/">Umar Mahmud</a>
+                Powered by <a href="https://gohugo.io">Hugo</a> | <a href="https://github.com/umarmahmud/refresh">'Refresh'</a> theme designed and coded by <a href="http://www.umarmahmud.com">Umar Mahmud</a>
             </div> 
         </div>    
     </body>
