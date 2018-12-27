@@ -1,4 +1,7 @@
 {{ define "main" }}
+    {{ if eq .Section "categories" }}
+        <h3><span> Category: </span>{{ .Title }}</h3>
+    {{ end }}
     <div class="article-list">
         {{ $paginator := .Paginate (where .Pages "Section" "posts") }} 
         {{ range $paginator.Pages }}
@@ -7,6 +10,13 @@
                     <p>
                         <a href="{{ .Permalink }}"> {{ .Title }}</a>
                     </p>
+                    {{ if .Params.categories }} 
+                        {{ range .Params.categories }}
+                            <span id="category-button">
+                                <a id="category-text" href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+                            </span>
+                        {{ end }} 
+                    {{ end }}
                 </li>
             </ul>
         {{ end }}
