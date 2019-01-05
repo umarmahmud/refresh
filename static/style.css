@@ -73,7 +73,7 @@ pre {
 }
 
 #title {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Questrial', sans-serif;
     font-size: 175%;
     margin: 0%;
 }
@@ -95,7 +95,7 @@ pre {
     font-size: 150%;
 }
 
-#category-button {
+#tag-button {
     border: 1px #006650 solid;
     background-color: #006650;
     padding: 2px;
@@ -103,7 +103,7 @@ pre {
     margin-left: 2px;
 }
 
-#category-text {
+#tag-text {
     color: white;
 }
 
@@ -118,7 +118,7 @@ pre {
     margin-bottom: 3%;
 }
 
-.post-categories {
+.post-tags {
     margin-top: 5%;
 }
 
@@ -149,6 +149,11 @@ pre {
 
 .button:hover {
     background-color: #009978;
+}
+
+.page-count {
+    margin-top: 12%;
+    text-align: center;
 }
 
 .disqus {

@@ -1,36 +1,52 @@
 {{ define "main" }}
-    {{ if eq .Section "categories" }}
-        <h3><span> Category: </span>{{ .Title }}</h3>
+    {{ if and (eq .Section "tags") (eq .Page.Title "Tags") }}
+        <h3>Tags</h3>
+        <ul id="all-tags">
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                    <li><a href="{{ .Permalink }}">{{ $name }} ({{ $taxonomy.Count }})</a></li>
+                {{ end }}
+            {{ end }}
+        </ul>
     {{ end }}
-    <div class="article-list">
-        {{ $paginator := .Paginate (where .Pages "Section" "posts") }} 
-        {{ range $paginator.Pages }}
-            <ul>
-                <li>
-                    <p>
-                        <a href="{{ .Permalink }}"> {{ .Title }}</a>
-                    </p>
-                    {{ if .Params.categories }} 
-                        {{ range .Params.categories }}
-                            <span id="category-button">
-                                <a id="category-text" href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-                            </span>
-                        {{ end }} 
-                    {{ end }}
-                </li>
-            </ul>
-        {{ end }}
-    </div>
-    <div class="paginator">
-        {{ if $paginator.HasPrev }}
-            <span class="previous">
-                <a href="{{ $paginator.Prev.URL }}" class="button">Previous</a>
-            </span>
-        {{ end }} 
-        {{ if $paginator.HasNext }}
-            <span class="next">
-                <a href="{{ $paginator.Next.URL }}" class="button">Next</a>
-            </span>
-        {{ end }}
-    </div>
+    {{ if and (eq .Section "tags") (ne .Page.Title "Tags") }}
+        <h3>{{ .Title }} <span style="font-size:15px;"><a href="{{ "tags" | relURL }}">[view all tags]</a></span></span></h3>
+    {{ end }} 
+    {{ if ne .Page.Title "Tags" }}
+        <div class="article-list">
+            {{ range .Paginator.Pages }}
+                <ul>
+                    <li>
+                        <p>
+                            <a href="{{ .Permalink }}"> {{ .Title }}</a>
+                        </p>
+                        {{ if .Params.tags }} 
+                            {{ range .Params.tags }}
+                                <span id="tag-button">
+                                    <a id="tag-text" href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+                                </span>
+                            {{ end }} 
+                        {{ end }}
+                    </li>
+                </ul>
+            {{ end }}
+        </div>
+        <div class="paginator">
+            {{ if .Paginator.HasPrev }}
+                <span class="previous">
+                    <a href="{{ .Paginator.Prev.URL }}" class="button">Previous</a>
+                </span>
+            {{ end }} 
+            {{ if .Paginator.HasNext }}
+                <span class="next">
+                    <a href="{{ .Paginator.Next.URL }}" class="button">Next</a>
+                </span>
+            {{ end }}
+        </div>
+        <div class="page-count">
+            {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+                <p>Page {{ .Paginator.PageNumber }}/{{ .Paginator.TotalPages }}</p>
+            {{ end }}
+        </div>
+    {{ end }}
 {{ end }}

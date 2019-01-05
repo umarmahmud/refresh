@@ -2,12 +2,12 @@
     <p id="post-title">{{ .Title }}</p>
     <div class="post-content">
         {{ .Content }}
-        <div class="post-categories">
-            {{ if .Params.categories }} 
-                <span>Categories: </span>
-                {{ range .Params.categories }}
-                    <span id="category-button">
-                        <a id="category-text" href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+        <div class="post-tags">
+            {{ if .Params.tags }} 
+                <span>Tags: </span>
+                {{ range .Params.tags }}
+                    <span id="tag-button">
+                        <a id="tag-text" href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
                     </span>
                 {{ end }} 
             {{ end }}
