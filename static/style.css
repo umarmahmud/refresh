@@ -15,7 +15,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #006650;
+    color: #004d3c;
 }
 
 a:hover {
@@ -116,6 +116,7 @@ pre {
 
 .post-content {
     margin-bottom: 3%;
+    font-size: 115%;
 }
 
 .post-tags {
@@ -145,10 +146,6 @@ pre {
     color: white;
     padding: 5px;
     text-align: center;
-}
-
-.button:hover {
-    background-color: #009978;
 }
 
 .page-count {
@@ -187,6 +184,9 @@ pre {
         margin-bottom: 2%;
         font-size: 150%;
     }
+    .post-content {
+        font-size: 110%;
+    }
 }
 
 @media only screen  and (min-width : 1225px) and (max-width : 1823px) {
@@ -215,6 +215,9 @@ pre {
         margin-bottom: 1%;
         font-size: 150%;
     }
+    .post-content {
+        font-size: 100%;
+    }
 }
 
 @media only screen  and (min-width : 1824px) {
@@ -242,5 +245,8 @@ pre {
     .article-list > ul > li > p {
         margin-bottom: 1%;
         font-size: 150%;
+    }
+    .post-content {
+        font-size: 100%;
     }
 }

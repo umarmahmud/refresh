@@ -10,7 +10,7 @@
         </ul>
     {{ end }}
     {{ if and (eq .Section "tags") (ne .Page.Title "Tags") }}
-        <h3>{{ .Title }} <span style="font-size:15px;"><a href="{{ "tags" | relURL }}">[view all tags]</a></span></span></h3>
+        <h3>{{ .Title }} <span style="font-size:15px;"><a href="{{ "tags" | relURL }}">[view all tags]</a></span></h3>
     {{ end }} 
     {{ if ne .Page.Title "Tags" }}
         <div class="article-list">
@@ -44,9 +44,7 @@
             {{ end }}
         </div>
         <div class="page-count">
-            {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-                <p>Page {{ .Paginator.PageNumber }}/{{ .Paginator.TotalPages }}</p>
-            {{ end }}
+            <p>Page {{ .Paginator.PageNumber }}/{{ .Paginator.TotalPages }}</p>
         </div>
     {{ end }}
 {{ end }}
