@@ -23,7 +23,6 @@ a:hover {
 }
 
 hr {
-    border: 0;
     height: 0;
     border-top: 1px solid #00b38c;
     border-bottom: 1px solid white;
@@ -39,6 +38,7 @@ pre {
 .content {
     width: 95%;
     font-family: 'Questrial', sans-serif;
+    line-height: 133%;
 }
 
 .footer {
@@ -46,7 +46,12 @@ pre {
     text-align: center;
     font-family: 'Questrial', sans-serif;
     margin-top: 2%;
+    margin-bottom: 1%;
     font-size: 80%;
+}
+
+#footer-hr {
+    width: 100%;
 }
 
 /* elements in header */
@@ -59,15 +64,26 @@ pre {
 }
 
 .column-0 {
-    flex: 90%;
+    flex: 80%;
     padding-left: 10px;
 }
 
 .column-1 {
     flex: 5%;
+    padding-right: 4px;
 }
 
 .column-2 {
+    flex: 5%;
+    padding-right: 4px;
+}
+
+.column-3 {
+    flex: 5%;
+    padding-right: 4px;
+}
+
+.column-4 {
     flex: 5%;
     padding-right: 10px;
 }
@@ -162,6 +178,9 @@ pre {
     .header {
         width: 100%;
     }
+    #footer-hr {
+        width: 100%;
+    }
     #title {
         font-size: 250%;
     }
@@ -193,6 +212,9 @@ pre {
     .header {
         width: 50%;
     }
+    #footer-hr {
+        width: 50%;
+    }
     #title {
         font-size: 250%;
     }
@@ -222,6 +244,9 @@ pre {
 
 @media only screen  and (min-width : 1824px) {
     .header {
+        width: 33%;
+    }
+    #footer-hr {
         width: 33%;
     }
     #title {

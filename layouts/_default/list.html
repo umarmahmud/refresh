@@ -10,7 +10,7 @@
         </ul>
     {{ end }}
     {{ if and (eq .Section "tags") (ne .Page.Title "Tags") }}
-        <h3>{{ .Title }} <span style="font-size:15px;"><a href="{{ "tags" | relURL }}">[view all tags]</a></span></h3>
+        <h3>{{ .Title }}</h3>
     {{ end }} 
     {{ if ne .Page.Title "Tags" }}
         <div class="article-list">
