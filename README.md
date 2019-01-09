@@ -5,24 +5,23 @@
 - Add the following to your `config.toml` file:
 
 ```
-baseURL = "http://example.org/"
+baseURL = "http://www.umarmahmud.com"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "umar writes..."
 theme = "refresh"
 pygmentsCodefences = true
 pygmentsStyle = "friendly"
-paginate = 8
+paginate = 12
 
 [params]
-    AuthorName = "Your Name"
-    description = "My Site Description"
-    github = "https://www.github.com/"
-    githubUsername = "username"
-    twitter = "https://www.twitter.com/"
-    twitterUsername = "@username"
+    AuthorName = "Umar Mahmud"
+    description = "notes on c#/python/web"
+    github = "https://github.com/umarmahmud"
+    twitter = "https://twitter.com/umarcomputes"
+    email = "umar.mahmud@outlook.com"
 
 [taxonomies]
-    category = "categories"
+    tag = "tags"
 ```
 
 - To enable Disqus, add `disqusShortname = "yourdiscussshortname"` in the `config.toml` file.
@@ -32,6 +31,4 @@ paginate = 8
 ### Creating New Content
 
 - Create a new post with `hugo new posts/new-post.md`.
-
-- Create a new "about" page with `hugo new about/_index.md`. "About" content will go inside `content/about/_index.md`
 
