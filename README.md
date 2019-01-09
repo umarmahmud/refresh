@@ -5,20 +5,20 @@
 - Add the following to your `config.toml` file:
 
 ```
-baseURL = "http://www.umarmahmud.com"
+baseURL = "your website"
 languageCode = "en-us"
-title = "umar writes..."
+title = "Site Title"
 theme = "refresh"
 pygmentsCodefences = true
 pygmentsStyle = "friendly"
 paginate = 12
 
 [params]
-    AuthorName = "Umar Mahmud"
-    description = "notes on c#/python/web"
-    github = "https://github.com/umarmahmud"
-    twitter = "https://twitter.com/umarcomputes"
-    email = "umar.mahmud@outlook.com"
+    AuthorName = "Your Name"
+    description = "Quick Description"
+    github = "github"
+    twitter = "twitter"
+    email = "email"
 
 [taxonomies]
     tag = "tags"
