@@ -38,7 +38,6 @@ pre {
 .content {
     width: 95%;
     font-family: 'Questrial', sans-serif;
-    line-height: 133%;
 }
 
 .footer {
@@ -132,7 +131,8 @@ pre {
 
 .post-content {
     margin-bottom: 3%;
-    font-size: 115%;
+    font-size: 133%;
+    line-height: 133%;
 }
 
 .post-tags {
@@ -204,7 +204,7 @@ pre {
         font-size: 150%;
     }
     .post-content {
-        font-size: 110%;
+        font-size: 125%;
     }
 }
 
@@ -238,7 +238,7 @@ pre {
         font-size: 150%;
     }
     .post-content {
-        font-size: 100%;
+        font-size: 125%;
     }
 }
 
@@ -272,6 +272,6 @@ pre {
         font-size: 150%;
     }
     .post-content {
-        font-size: 100%;
+        font-size: 125%;
     }
 }

@@ -22,12 +22,12 @@
             </div>
             <div class="column-1">
                 {{ if .Site.Params.twitter }}
-                    <a href="{{ .Site.Params.twitter }}"><img src="{{ "twitter.svg" | relURL }}" alt=""></a>
+                    <a href="https://twitter.com/{{ .Site.Params.twitter }}"><img src="{{ "twitter.svg" | relURL }}" alt=""></a>
                 {{ end }}
             </div>
             <div class="column-2">
                 {{ if .Site.Params.github }}
-                    <a href="{{ .Site.Params.github }}"><img src="{{ "github.svg" | relURL }}" alt=""></a>
+                    <a href="https://github.com/{{ .Site.Params.github }}"><img src="{{ "github.svg" | relURL }}" alt=""></a>
                 {{ end }}
             </div>
             <div class="column-3">
