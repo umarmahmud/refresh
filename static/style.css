@@ -64,7 +64,7 @@ pre {
     flex-wrap: nowrap;
     justify-content: space-between;
     flex-direction: row;
-    width: 100%;
+    width: 66%;
     margin-top: 8px;
 }
 
@@ -173,7 +173,7 @@ pre {
         width: 100%;
     }
     .icons {
-        width: 100%;
+        width: 40%;
     }
     hr {
         width: 100%;
@@ -208,7 +208,7 @@ pre {
         margin-top: 1%;
     }
     .icons {
-        width: 50%;
+        width: 25%;
     }
     hr {
         width: 50%;
@@ -243,7 +243,7 @@ pre {
         margin-top: 1%;
     }
     .icons {
-        width: 33%;
+        width: 15%;
     }
     hr {
         width: 33%;
