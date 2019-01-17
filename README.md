@@ -32,3 +32,5 @@ paginate = 12
 
 - Create a new post with `hugo new posts/new-post.md`.
 
+- Create a new "about" page with `hugo new about/_index.md`. "About" content will go inside `content/about/_index.md`
+

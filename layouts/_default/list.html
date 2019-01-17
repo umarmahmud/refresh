@@ -20,13 +20,17 @@
                         <p>
                             <a href="{{ .Permalink }}"> {{ .Title }}</a>
                         </p>
-                        {{ if .Params.tags }} 
-                            {{ range .Params.tags }}
-                                <span id="tag-button">
-                                    <a id="tag-text" href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-                                </span>
-                            {{ end }} 
-                        {{ end }}
+                        <div class="tags">
+                            {{ if .Params.tags }} 
+                                {{ range .Params.tags }}
+                                <div class="button-grid">
+                                    <span id="tag-button">
+                                        <a id="tag-text" href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+                                    </span>
+                                </div>
+                                {{ end }} 
+                            {{ end }}
+                        </div>
                     </li>
                 </ul>
             {{ end }}

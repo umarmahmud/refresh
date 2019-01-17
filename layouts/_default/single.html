@@ -2,16 +2,18 @@
     <p id="post-title">{{ .Title }}</p>
     <div class="post-content">
         {{ .Content }}
-        <div class="post-tags">
-            {{ if .Params.tags }} 
-                <span>Tags: </span>
-                {{ range .Params.tags }}
-                    <span id="tag-button">
-                        <a id="tag-text" href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-                    </span>
-                {{ end }} 
-            {{ end }}
-        </div>
+    </div>
+    <div class="tags post-tags">
+        {{ if .Params.tags }} 
+            <span style="margin-right:8px"><a href="{{ "tags" | relURL }}" title="Tags">Tags:</a></span>
+            {{ range .Params.tags }}
+            <div class="button-grid">
+                <span id="tag-button">
+                    <a id="tag-text" href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+                </span>
+            </div>
+            {{ end }} 
+        {{ end }}
     </div>
     <div class="paginator">
         {{ with .NextInSection }}
