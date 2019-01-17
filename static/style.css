@@ -15,7 +15,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #004d3c;
+    color: #003328;
 }
 
 a:hover {
@@ -61,39 +61,11 @@ pre {
 
 .icons {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     flex-direction: row;
     width: 100%;
-    margin-top: 5px;
-}
-
-.column-0 {
-    flex: 30%
-    
-}
-
-.column-1 {
-    flex: 12%
-    
-}
-
-.column-2 {
-    flex: 12%
-    
-}
-
-.column-3 {
-    flex: 12%
-    
-}
-
-.column-4 {
-    flex: 0%
-    
-}
-
-.column-5 {
-    flex: 30%
-    
+    margin-top: 8px;
 }
 
 #title {
@@ -106,6 +78,7 @@ pre {
     font-family: 'Questrial', sans-serif;
     font-size: 100%;
     font-weight: bold;
+    color: #009978;
 }
 
 /* elements in content (list.html) */
@@ -232,6 +205,7 @@ pre {
 @media only screen  and (min-width : 1225px) and (max-width : 1823px) {
     .header {
         width: 50%;
+        margin-top: 1%;
     }
     .icons {
         width: 50%;
@@ -266,6 +240,7 @@ pre {
 @media only screen  and (min-width : 1824px) {
     .header {
         width: 33%;
+        margin-top: 1%;
     }
     .icons {
         width: 33%;

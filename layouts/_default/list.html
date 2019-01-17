@@ -1,6 +1,6 @@
 {{ define "main" }}
     {{ if and (eq .Section "tags") (eq .Page.Title "Tags") }}
-        <h3>Tags</h3>
+        <h3>All Tags</h3>
         <ul id="all-tags">
             {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                 {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
