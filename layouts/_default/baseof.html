@@ -5,10 +5,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{ "style.css" | relURL }}">
-        <title>{{ .Site.Title }}</title>
+        <title>{{ .Page.Title }}</title>
 
         <!--Google Fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Questrial|Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
         <!-- Google Analytics Async-->
         {{ template "_internal/google_analytics_async.html" . }}
