@@ -30,6 +30,7 @@ hr {
 }
 
 pre {
+    line-height: 150%;
     overflow-x: scroll;
     padding: 5px;
 }
@@ -76,7 +77,7 @@ pre {
 
 #subtitle {
     font-family: 'Questrial', sans-serif;
-    font-size: 100%;
+    font-size: 115%;
     font-weight: bold;
     color: #009978;
 }
@@ -200,6 +201,9 @@ pre {
         margin-bottom: 2%;
         font-size: 150%;
     }
+    .post-content {
+        font-size: 125%;
+    }
 }
 
 @media only screen  and (min-width : 1225px) and (max-width : 1823px) {
@@ -235,6 +239,9 @@ pre {
         margin-bottom: 1%;
         font-size: 166%;
     }
+    .post-content {
+        font-size: 133%;
+    }
 }
 
 @media only screen  and (min-width : 1824px) {
@@ -269,5 +276,8 @@ pre {
     .article-list > ul > li > p {
         margin-bottom: 1%;
         font-size: 170%;
+    }
+    .post-content {
+        font-size: 133%;
     }
 }
