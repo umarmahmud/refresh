@@ -83,11 +83,10 @@ pre {
 
 /* blurb */
 .blurb {
-    background-color: #404040;
-    color: white;
+    background-color: #f2f2f2;
     margin-top: 2%;
     padding: 2px 20px 2px 20px;
-    font-size: 125%;
+    font-size: 120%;
     line-height: 133%;
     text-align: center;
 }
