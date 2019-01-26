@@ -83,7 +83,8 @@ pre {
 
 /* blurb */
 .blurb {
-    background-color: #f2f2f2;
+    background-color: #404040;
+    color: white;
     margin-top: 2%;
     padding: 2px 20px 2px 20px;
     font-size: 120%;
@@ -118,8 +119,8 @@ div.blurb a {
 }
 
 #tag-button {
-    border: 1px #006650 solid;
-    background-color: #006650;
+    border: 1px #404040 solid;
+    background-color: #404040;
     padding: 2px;
     margin-right: 4px;
     margin-left: 2px;
@@ -170,7 +171,7 @@ div.post-content a {
 }
 
 .button {
-    background-color: #006650;
+    background-color: #404040;
     color: white;
     padding: 5px;
     text-align: center;
@@ -179,6 +180,7 @@ div.post-content a {
 .page-count {
     margin-top: 12%;
     text-align: center;
+    font-size: 120%;
 }
 
 .disqus {
