@@ -4,8 +4,8 @@
             <p>{{ .Content }}</p>
         </div>
     {{ end }}
-    <h3>{{ .Title }}</h3>
     {{ if eq .Page.Title "Tags" }}
+        <h3>All tags</h3>
         <ul id="all-tags">
             {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                 {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
@@ -15,6 +15,9 @@
         </ul>
     {{ end }} 
     {{ if ne .Page.Title "Tags" }}
+        {{ if ne .Page.Title .Site.Title }}
+            <h3>{{ .Title }}</h3>
+        {{ end }}
         <div class="article-list">
             {{ range .Paginator.Pages }}
                 <ul>
