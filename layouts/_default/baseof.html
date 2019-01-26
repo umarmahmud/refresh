@@ -23,19 +23,16 @@
         </div>
         <div class="icons">
             <div class="column-0">
-                <a href="{{ "about/" | relURL }}" title="About"><img src="{{ "user.svg" | relURL }}" alt=""></a>
-            </div>
-            <div class="column-1">
                 {{ if .Site.Params.twitter }}
                     <a href="https://twitter.com/{{ .Site.Params.twitter }}" title="Twitter"><img src="{{ "twitter.svg" | relURL }}" alt=""></a>
                 {{ end }}
             </div>
-            <div class="column-2">
+            <div class="column-1">
                 {{ if .Site.Params.github }}
                     <a href="https://github.com/{{ .Site.Params.github }}" title="Github"><img src="{{ "github.svg" | relURL }}" alt=""></a>
                 {{ end }}
             </div>
-            <div class="column-3">
+            <div class="column-2">
                 {{ if .Site.Params.email }}
                     <a href="mailto:{{ .Site.Params.email }}" title="Contact"><img src="{{ "mail.svg" | relURL }}" alt=""></a>
                 {{ end }}
@@ -47,7 +44,7 @@
         </div>
         <div class="footer">
             <hr>
-            Copyright &copy; {{ now.Format "2006"}} <a href="{{ "about/" | relURL }}">{{ .Site.Params.AuthorName }}</a>
+            Copyright &copy; {{ now.Format "2006"}} {{ .Site.Params.AuthorName }}
         </div>    
     </body>
 

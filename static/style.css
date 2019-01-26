@@ -65,7 +65,7 @@ pre {
     flex-wrap: nowrap;
     justify-content: space-between;
     flex-direction: row;
-    width: 66%;
+    width: 50%;
     margin-top: 8px;
 }
 
@@ -79,6 +79,21 @@ pre {
     font-family: 'Questrial', sans-serif;
     font-size: 115%;
     font-weight: bold;
+    color: #009978;
+}
+
+/* blurb */
+.blurb {
+    background-color: #f2f2f2;
+    margin-top: 2%;
+    padding: 2px;
+    font-size: 110%;
+    line-height: 133%;
+    text-align: center;
+}
+
+div.blurb a {
+    text-decoration: none;
     color: #009978;
 }
 
@@ -174,7 +189,7 @@ pre {
         width: 100%;
     }
     .icons {
-        width: 40%;
+        width: 33%;
     }
     hr {
         width: 100%;
@@ -212,7 +227,7 @@ pre {
         margin-top: 1%;
     }
     .icons {
-        width: 25%;
+        width: 15%;
     }
     hr {
         width: 50%;
@@ -250,7 +265,7 @@ pre {
         margin-top: 1%;
     }
     .icons {
-        width: 15%;
+        width: 10%;
     }
     hr {
         width: 33%;

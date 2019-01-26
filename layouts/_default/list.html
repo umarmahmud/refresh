@@ -1,6 +1,11 @@
 {{ define "main" }}
-    {{ if and (eq .Section "tags") (eq .Page.Title "Tags") }}
-        <h3>All Tags</h3>
+    {{ if eq .Page.Title .Site.Title }}
+        <div class="blurb">
+            <p>{{ .Content }}</p>
+        </div>
+    {{ end }}
+    <h3>{{ .Title }}</h3>
+    {{ if eq .Page.Title "Tags" }}
         <ul id="all-tags">
             {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                 {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
@@ -8,9 +13,6 @@
                 {{ end }}
             {{ end }}
         </ul>
-    {{ end }}
-    {{ if and (eq .Section "tags") (ne .Page.Title "Tags") }}
-        <h3>{{ .Title }}</h3>
     {{ end }} 
     {{ if ne .Page.Title "Tags" }}
         <div class="article-list">
