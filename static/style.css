@@ -92,7 +92,6 @@ pre {
 }
 
 div.blurb a {
-    text-decoration: none;
     color: #009978;
 }
 
@@ -141,6 +140,10 @@ div.blurb a {
     margin-bottom: 3%;
     font-size: 125%;
     line-height: 133%;
+}
+
+div.post-content a {
+    color: #009978;
 }
 
 .post-tags {
