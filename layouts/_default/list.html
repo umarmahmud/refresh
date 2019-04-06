@@ -21,21 +21,11 @@
         <div class="article-list">
             {{ range .Paginator.Pages }}
                 <ul>
-                    <li>
-                        <p>
-                            <a href="{{ .Permalink }}"> {{ .Title }}</a>
-                        </p>
-                        <div class="tags">
-                            {{ if .Params.tags }} 
-                                {{ range .Params.tags }}
-                                <div class="button-grid">
-                                    <span id="tag-button">
-                                        <a id="tag-text" href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-                                    </span>
-                                </div>
-                                {{ end }} 
-                            {{ end }}
-                        </div>
+                    <li>    
+                        <div class="date"> {{ .PublishDate.Format "Jan 2, 2006" }} </div>
+                        <div class="title-main">
+                            <a href="{{ .Permalink }}"> {{ .Title }}</a> 
+                        </div>   
                     </li>
                 </ul>
             {{ end }}

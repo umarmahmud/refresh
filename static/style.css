@@ -24,7 +24,7 @@ a:hover {
 
 hr {
     height: 0;
-    border-top: 1px solid #404040;
+    color: gray;
     width: 100%;
 }
 
@@ -59,15 +59,6 @@ pre {
     width: 100%;
 }
 
-.icons {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 50%;
-    margin-top: 8px;
-}
-
 #title {
     font-family: 'Questrial', sans-serif;
     font-size: 175%;
@@ -76,19 +67,20 @@ pre {
 
 #subtitle {
     font-family: 'Questrial', sans-serif;
-    font-size: 115%;
+    font-size: 110%;
     font-weight: bold;
     color: #009978;
 }
 
 /* blurb */
 .blurb {
-    background-color: #404040;
-    color: white;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #009978;
     margin-top: 2%;
     padding: 2px 20px 2px 20px;
-    font-size: 120%;
-    line-height: 133%;
+    font-size: 100%;
+    line-height: 150%;
     text-align: center;
 }
 
@@ -99,11 +91,20 @@ div.blurb a {
 /* elements in content (list.html) */
 
 .article-list > ul {
+    margin-top: 4%;
     margin-bottom: 10%;
 }
 
-.article-list > ul > li > p {
+.article-list > ul > li {
     margin-bottom: 3%;
+}
+
+.date {
+    color: gray;
+    margin-bottom: 3px;
+}
+
+.title-main {
     font-size: 150%;
 }
 
@@ -119,8 +120,8 @@ div.blurb a {
 }
 
 #tag-button {
-    border: 1px #404040 solid;
-    background-color: #404040;
+    background-color: #009978;
+    color: white;
     padding: 2px;
     margin-right: 4px;
     margin-left: 2px;
@@ -133,13 +134,14 @@ div.blurb a {
 /* elements in content (single.html) */
 
 #post-title {
+    font-weight: bold;
     margin-bottom: 1%;
-    font-size: 175%;
+    font-size: 133%;
 }
 
 .post-content {
     margin-bottom: 3%;
-    font-size: 125%;
+    font-size: 110%;
     line-height: 133%;
 }
 
@@ -171,7 +173,7 @@ div.post-content a {
 }
 
 .button {
-    background-color: #404040;
+    background-color: #009978;
     color: white;
     padding: 5px;
     text-align: center;
@@ -191,9 +193,6 @@ div.post-content a {
 @media only screen and (min-width : 768px) and (max-width : 1224px) {
     .header {
         width: 100%;
-    }
-    .icons {
-        width: 33%;
     }
     hr {
         width: 100%;
@@ -221,7 +220,7 @@ div.post-content a {
         font-size: 150%;
     }
     .post-content {
-        font-size: 125%;
+        font-size: 115%;
     }
 }
 
@@ -229,9 +228,6 @@ div.post-content a {
     .header {
         width: 50%;
         margin-top: 1%;
-    }
-    .icons {
-        width: 15%;
     }
     hr {
         width: 50%;
@@ -259,7 +255,7 @@ div.post-content a {
         font-size: 166%;
     }
     .post-content {
-        font-size: 133%;
+        font-size: 115%;
     }
 }
 
@@ -267,9 +263,6 @@ div.post-content a {
     .header {
         width: 33%;
         margin-top: 1%;
-    }
-    .icons {
-        width: 10%;
     }
     hr {
         width: 33%;
@@ -297,6 +290,6 @@ div.post-content a {
         font-size: 170%;
     }
     .post-content {
-        font-size: 133%;
+        font-size: 120%;
     }
 }

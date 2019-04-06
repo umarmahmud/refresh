@@ -21,23 +21,9 @@
                 <div id="subtitle">{{ .Site.Params.description }}</div>
             </div>
         </div>
-        <div class="icons">
-            <div class="column-0">
-                {{ if .Site.Params.twitter }}
-                    <a href="https://twitter.com/{{ .Site.Params.twitter }}" title="Twitter"><img src="{{ "twitter.svg" | relURL }}" alt=""></a>
-                {{ end }}
-            </div>
-            <div class="column-1">
-                {{ if .Site.Params.github }}
-                    <a href="https://github.com/{{ .Site.Params.github }}" title="Github"><img src="{{ "github.svg" | relURL }}" alt=""></a>
-                {{ end }}
-            </div>
-            <div class="column-2">
-                {{ if .Site.Params.email }}
-                    <a href="mailto:{{ .Site.Params.email }}" title="Contact"><img src="{{ "mail.svg" | relURL }}" alt=""></a>
-                {{ end }}
-            </div>
-        </div>
+        {{ if ne .Page.Title .Site.Title }}
+            <hr>
+        {{ end }}
         <div class="content">
             {{ block "main" . }} 
             {{ end }}

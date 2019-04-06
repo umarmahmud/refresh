@@ -16,9 +16,6 @@ paginate = 12
 [params]
     AuthorName = "Your Name"
     description = "Quick Description"
-    github = "github"
-    twitter = "twitter"
-    email = "email"
 
 [taxonomies]
     tag = "tags"
