@@ -75,11 +75,10 @@ pre {
 .blurb {
     border: solid #009978;
     border-radius: 8px;
-    margin-top: 2%;
+    margin-top: 1%;
     padding: 2px 20px 2px 20px;
     font-size: 100%;
     line-height: 150%;
-    text-align: center;
 }
 
 div.blurb a {
@@ -180,7 +179,7 @@ div.post-content a {
 .page-count {
     margin-top: 12%;
     text-align: center;
-    font-size: 120%;
+    font-size: 90%;
 }
 
 .disqus {
