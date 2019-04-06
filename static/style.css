@@ -54,8 +54,6 @@ pre {
 /* elements in header */
 
 .header {
-    display: flex;
-    justify-content: center;
     text-align: center;
     width: 100%;
 }
@@ -68,17 +66,15 @@ pre {
 
 #subtitle {
     font-family: 'Questrial', sans-serif;
-    font-size: 110%;
+    font-size: 115%;
     font-weight: bold;
     color: #009978;
-    margin-top: 1%;
 }
 
 /* blurb */
 .blurb {
-    border-style: solid;
+    border: solid #009978;
     border-radius: 8px;
-    border-color: #009978;
     margin-top: 2%;
     padding: 2px 20px 2px 20px;
     font-size: 100%;
