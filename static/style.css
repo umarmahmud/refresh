@@ -6,6 +6,7 @@ body {
     align-items: center;
     background-color: white;
     min-height: 100vh;
+    margin-top: 2%;
 }
 
 ul {
@@ -70,6 +71,7 @@ pre {
     font-size: 110%;
     font-weight: bold;
     color: #009978;
+    margin-top: 1%;
 }
 
 /* blurb */
@@ -91,7 +93,7 @@ div.blurb a {
 /* elements in content (list.html) */
 
 .article-list > ul {
-    margin-top: 4%;
+    margin-top: 5%;
     margin-bottom: 10%;
 }
 
@@ -101,7 +103,7 @@ div.blurb a {
 
 .date {
     color: gray;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .title-main {
