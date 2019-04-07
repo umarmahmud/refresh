@@ -1,4 +1,4 @@
-"Refresh" is a Hugo theme for blogging.
+"Refresh" is an elegant Hugo theme designed with bloggers in mind.
 
 ### Configuration
 
@@ -27,7 +27,15 @@ paginate = 12
 
 ### Creating New Content
 
-- Create a new post with `hugo new posts/new-post.md`.
+- Create a new post with `hugo new posts/new-post.md`. Posts will be contained in a "posts" directory in your content folder.
 
-- Add an "About" section with content in `content/_index.md`. The front matter must include `title: "(your site's title)"`
+- Add a "blurb" for your site by creating a `_index.md` directly in your content folder:
 
+```
+---
+title: "your site title"
+---
+
+Your blurb here...
+
+```

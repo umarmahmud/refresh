@@ -75,7 +75,7 @@ pre {
 .blurb {
     border: solid #009978;
     border-radius: 8px;
-    margin-top: 1%;
+    margin-top: 4%;
     padding: 2px 20px 2px 20px;
     font-size: 100%;
     line-height: 150%;
@@ -219,6 +219,9 @@ div.post-content a {
     .post-content {
         font-size: 115%;
     }
+    .blurb {
+        margin-top: 2%;
+    }
 }
 
 @media only screen  and (min-width : 1225px) and (max-width : 1823px) {
@@ -254,6 +257,9 @@ div.post-content a {
     .post-content {
         font-size: 115%;
     }
+    .blurb {
+        margin-top: 1%;
+    }
 }
 
 @media only screen  and (min-width : 1824px) {
@@ -288,5 +294,8 @@ div.post-content a {
     }
     .post-content {
         font-size: 120%;
+    }
+    .blurb {
+        margin-top: 1%;
     }
 }
