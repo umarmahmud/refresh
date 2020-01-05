@@ -29,8 +29,6 @@ paginate = 12
 
 - Create a new post with `hugo new posts/new-post.md`. Posts will be contained in a "posts" directory in your content folder.
 
-- Add a "blurb" for your site by creating a `_index.md` directly in your content folder:
-
 ```
 ---
 title: "your site title"
