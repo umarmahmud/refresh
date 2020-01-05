@@ -35,5 +35,4 @@ paginate = 12
 ---
 title: "your site title"
 ---
-
 ```
