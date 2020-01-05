@@ -16,11 +16,11 @@ ul {
 
 a {
     text-decoration: none;
-    color: #003328;
+    color: #002A6E;
 }
 
 a:hover {
-    color: #009978;
+    color: #FF9524;
 }
 
 hr {
@@ -68,27 +68,13 @@ pre {
     font-family: 'Questrial', sans-serif;
     font-size: 115%;
     font-weight: bold;
-    color: #009978;
-}
-
-/* blurb */
-.blurb {
-    border: solid #009978;
-    border-radius: 8px;
-    margin-top: 4%;
-    padding: 2px 20px 2px 20px;
-    font-size: 100%;
-    line-height: 150%;
-}
-
-div.blurb a {
-    color: #009978;
+    color: #003B99;
 }
 
 /* elements in content (list.html) */
 
 .article-list > ul {
-    margin-top: 5%;
+    margin-top: 4%;
     margin-bottom: 10%;
 }
 
@@ -117,11 +103,12 @@ div.blurb a {
 }
 
 #tag-button {
-    background-color: #009978;
+    background-color: #002A6E;
     color: white;
     padding: 2px;
     margin-right: 4px;
     margin-left: 2px;
+    border-radius: 3px;
 }
 
 #tag-text {
@@ -143,7 +130,7 @@ div.blurb a {
 }
 
 div.post-content a {
-    color: #009978;
+    color: #FF9524;
 }
 
 .post-tags {
@@ -170,10 +157,11 @@ div.post-content a {
 }
 
 .button {
-    background-color: #009978;
+    background-color: #002A6E;
     color: white;
     padding: 5px;
     text-align: center;
+    border-radius: 3px;
 }
 
 .page-count {
@@ -219,9 +207,6 @@ div.post-content a {
     .post-content {
         font-size: 115%;
     }
-    .blurb {
-        margin-top: 2%;
-    }
 }
 
 @media only screen  and (min-width : 1225px) and (max-width : 1823px) {
@@ -257,9 +242,6 @@ div.post-content a {
     .post-content {
         font-size: 115%;
     }
-    .blurb {
-        margin-top: 1%;
-    }
 }
 
 @media only screen  and (min-width : 1824px) {
@@ -294,8 +276,5 @@ div.post-content a {
     }
     .post-content {
         font-size: 120%;
-    }
-    .blurb {
-        margin-top: 1%;
     }
 }

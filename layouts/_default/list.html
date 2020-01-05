@@ -1,9 +1,4 @@
 {{ define "main" }}
-    {{ if eq .Page.Title .Site.Title }}
-        <div class="blurb">
-            {{ .Content }}
-        </div>
-    {{ end }}
     {{ if eq .Page.Title "Tags" }}
         <h3>All tags</h3>
         <ul id="all-tags">

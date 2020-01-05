@@ -1,4 +1,4 @@
-"Refresh" is an elegant Hugo theme designed with bloggers in mind.
+"Refresh" is an extremely minimalistic blogging theme for Hugo. It puts 100% of the focus on your content. No distractions, no fluff, no BS.
 
 ### Configuration
 
@@ -10,7 +10,7 @@ languageCode = "en-us"
 title = "Site Title"
 theme = "refresh"
 pygmentsCodefences = true
-pygmentsStyle = "friendly"
+pygmentsStyle = "default"
 paginate = 12
 
 [params]
@@ -35,7 +35,5 @@ paginate = 12
 ---
 title: "your site title"
 ---
-
-Your blurb here...
 
 ```
