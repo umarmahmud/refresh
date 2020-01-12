@@ -68,13 +68,13 @@ pre {
     font-family: 'Questrial', sans-serif;
     font-size: 115%;
     font-weight: bold;
-    color: #003B99;
+    color: #404040;
 }
 
 /* elements in content (list.html) */
 
 .article-list > ul {
-    margin-top: 4%;
+    margin-top: 5%;
     margin-bottom: 10%;
 }
 
@@ -108,7 +108,7 @@ pre {
     padding: 2px;
     margin-right: 4px;
     margin-left: 2px;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 #tag-text {
@@ -161,7 +161,7 @@ div.post-content a {
     color: white;
     padding: 5px;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .page-count {
