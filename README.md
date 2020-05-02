@@ -14,8 +14,9 @@ pygmentsStyle = "default"
 paginate = 12
 
 [params]
-    AuthorName = "Your Name"
+    author = "Your Name"
     description = "Quick Description"
+    footer = "your footer text"
 
 [taxonomies]
     tag = "tags"
