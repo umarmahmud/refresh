@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #090030;
+    background-color: #0D0025;
     color: white;
     min-height: 100vh;
     margin-top: 2%;
@@ -17,7 +17,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #F7FF00;
+    color: #AAFF00;
 }
 
 hr {
@@ -36,13 +36,13 @@ pre {
 
 .content {
     width: 95%;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer {
     width: 100%;
     text-align: center;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-top: 2%;
     margin-bottom: 1%;
     font-size: 90%;
@@ -56,13 +56,13 @@ pre {
 }
 
 #title {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Pacifico', sans-serif;
     font-size: 175%;
     margin: 0%;
 }
 
 #subtitle {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 115%;
     font-weight: bold;
 }
@@ -98,7 +98,7 @@ pre {
 }
 
 #tag-button {
-    background-color: #524C6E;
+    background-color: #3D3250;
     padding: 2px;
     margin-right: 4px;
     margin-left: 2px;
@@ -120,7 +120,7 @@ pre {
 }
 
 div.post-content a {
-    color: #F7FF00;
+    color: #AAFF00;
 }
 
 .post-tags {
@@ -139,7 +139,7 @@ div.post-content a {
 }
 
 .button {
-    background-color: #524C6E;
+    background-color: #3D3250;
     padding: 5px;
     text-align: center;
     border-radius: 2px;
