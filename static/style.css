@@ -4,7 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #090030;
+    color: white;
     min-height: 100vh;
     margin-top: 2%;
 }
@@ -16,16 +17,12 @@ ul {
 
 a {
     text-decoration: none;
-    color: #002A6E;
-}
-
-a:hover {
-    color: #FF9524;
+    color: #F7FF00;
 }
 
 hr {
     height: 0;
-    color: gray;
+    color: white;
     width: 100%;
 }
 
@@ -68,7 +65,6 @@ pre {
     font-family: 'Questrial', sans-serif;
     font-size: 115%;
     font-weight: bold;
-    color: #404040;
 }
 
 /* elements in content (list.html) */
@@ -83,7 +79,6 @@ pre {
 }
 
 .date {
-    color: gray;
     margin-bottom: 4px;
 }
 
@@ -103,16 +98,11 @@ pre {
 }
 
 #tag-button {
-    background-color: #002A6E;
-    color: white;
+    background-color: #524C6E;
     padding: 2px;
     margin-right: 4px;
     margin-left: 2px;
     border-radius: 2px;
-}
-
-#tag-text {
-    color: white;
 }
 
 /* elements in content (single.html) */
@@ -130,7 +120,7 @@ pre {
 }
 
 div.post-content a {
-    color: #FF9524;
+    color: #F7FF00;
 }
 
 .post-tags {
@@ -148,17 +138,8 @@ div.post-content a {
     float: left;
 }
 
-.paginator > .next > a:hover {
-    color: white;
-}
-
-.paginator > .previous > a:hover {
-    color: white;
-}
-
 .button {
-    background-color: #002A6E;
-    color: white;
+    background-color: #524C6E;
     padding: 5px;
     text-align: center;
     border-radius: 2px;
