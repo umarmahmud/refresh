@@ -27,6 +27,7 @@ hr {
 }
 
 pre {
+    background-color: #3D3250;
     line-height: 150%;
     overflow-x: scroll;
     padding: 5px;
