@@ -9,8 +9,6 @@ baseURL = "your website"
 languageCode = "en-us"
 title = "Site Title"
 theme = "refresh"
-pygmentsCodefences = true
-pygmentsStyle = "bw"
 paginate = 12
 
 [params]
