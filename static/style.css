@@ -22,11 +22,12 @@ a {
 
 hr {
     height: 0;
-    color: white;
+    color: #3D3250;
     width: 100%;
 }
 
 pre {
+    color: black;
     line-height: 150%;
     overflow-x: scroll;
     padding: 5px;
@@ -45,7 +46,7 @@ pre {
     font-family: 'Roboto', sans-serif;
     margin-top: 2%;
     margin-bottom: 1%;
-    font-size: 90%;
+    font-size: 60%;
 }
 
 /* elements in header */
