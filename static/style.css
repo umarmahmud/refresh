@@ -4,8 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0E0E6C;
-    color: #CFCCE7;
+    background-color: #464550;
+    color: #ECECED;
     min-height: 100vh;
     margin-top: 2%;
 }
@@ -17,17 +17,16 @@ ul {
 
 a {
     text-decoration: none;
-    color: #CFCCE7;
 }
 
 hr {
     height: 0;
-    color: #3E3E89;
+    color: #6B6A73;
     width: 100%;
 }
 
 pre {
-    background-color: #3E3E89;
+    background-color: #6B6A73;
     line-height: 150%;
     overflow-x: scroll;
     padding: 5px;
@@ -99,7 +98,7 @@ pre {
 }
 
 #tag-button {
-    background-color: #3E3E89;
+    background-color: #6B6A73;
     padding: 2px;
     margin-right: 4px;
     margin-left: 2px;
@@ -121,7 +120,7 @@ pre {
 }
 
 div.post-content a {
-    color: #CFCCE7;
+    font-weight: bold;
 }
 
 .post-tags {
@@ -140,7 +139,7 @@ div.post-content a {
 }
 
 .button {
-    background-color: #3E3E89;
+    background-color: #6B6A73;
     padding: 5px;
     text-align: center;
     border-radius: 2px;
