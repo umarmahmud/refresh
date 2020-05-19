@@ -40,15 +40,6 @@ pre {
     font-family: 'Roboto', sans-serif;
 }
 
-.footer {
-    width: 100%;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 2%;
-    margin-bottom: 1%;
-    font-size: 70%;
-}
-
 /* elements in header */
 
 .header {
@@ -145,12 +136,6 @@ div.post-content a {
     padding: 5px;
     text-align: center;
     border-radius: 2px;
-}
-
-.page-count {
-    margin-top: 12%;
-    text-align: center;
-    font-size: 90%;
 }
 
 .disqus {

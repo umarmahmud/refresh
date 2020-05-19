@@ -14,7 +14,6 @@ paginate = 12
 [params]
     author = "Your Name"
     description = "Quick Description"
-    footer = "your footer text"
 
 [taxonomies]
     tag = "tags"
