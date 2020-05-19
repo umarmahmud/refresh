@@ -6,7 +6,7 @@ body {
     align-items: center;
     background-color: #464550;
     color: #ECECED;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin-top: 2%;
 }
 
