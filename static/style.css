@@ -38,6 +38,7 @@ pre {
 .content {
     width: 95%;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 1%;
 }
 
 /* elements in header */
